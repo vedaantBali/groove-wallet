@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0.0
+Name=GrooveWallet
+Comment=Client for Groove-Chain
+Exec=groove-chain
+Icon=${SNAP}/meta/gui/groove-wallet.png
+Terminal=false
+Type=Application
+Categories=Utility;Application;

@@ -1,0 +1,22 @@
+name: groove-wallet
+version: 1.0.0
+summary: Client for Groove-Chain
+description: Snap client for accessing a Groove-Chain wallet
+confinement: strict
+base: core18
+grade: stable
+icon: snap/gui/groove-wallet.png
+
+apps:
+    groove-wallet:
+      command: groove_wallet
+      extensions: [flutter-master]
+      plugs:
+        - network
+        - desktop
+
+parts:
+  groove-wallet:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
