@@ -1,5 +1,5 @@
 name: groove-wallet
-version: 1.0.0
+version: 1.1.0
 summary: Client for Groove-Chain
 description: Snap client for accessing a Groove-Chain wallet
 confinement: strict

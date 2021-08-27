@@ -6,14 +6,10 @@ class WalletController {
 
   Future<void> getWalletInfo(userUrl) async {
     String url = 'https://$userUrl.herokuapp.com/api/wallet-info';
-    print(url);
     var response = await http.get(Uri.parse(url));
     var responseData = jsonDecode(response.body);
 
     publicKey = responseData['address'];
     balance = responseData['balance'];
-
-    print(publicKey);
-    print(balance);
   }
 }

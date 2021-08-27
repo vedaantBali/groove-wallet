@@ -6,11 +6,11 @@ class TransactController {
 
     var jsonString = '{\"receiver\": \"$receiver\",\"amount\":$amount}';
     String url = 'https://$user.herokuapp.com/api/transact';
-    print(jsonString);
+    // print(jsonString);
     http.post(Uri.parse(url), body: jsonString, headers: {
       "Content-Type" : "application/json"
     }).then((result) {
-      print(result.body);
+      // print(result.body);
     });
   }
 }
